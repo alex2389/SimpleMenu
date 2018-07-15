@@ -67,6 +67,9 @@ class SimpleMenuServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/resources/views' => resource_path('views/vendor/SimpleMenu'),
         ], 'views');
+        $this->publishes([
+            __DIR__ . '/resources/pagination' => resource_path('views/vendor/pagination'),
+        ]);
     }
 
     /**
